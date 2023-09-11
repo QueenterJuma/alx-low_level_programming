@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - the entry point*
+ * 
  * Returb: 0 when successful
  */
 int main(void)
