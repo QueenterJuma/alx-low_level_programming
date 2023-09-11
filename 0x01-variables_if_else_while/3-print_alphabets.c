@@ -6,17 +6,22 @@
  */
 int main(void)
 {
-	int letter;
+	int k = 27;
+	int j = 1;
 
-	for (letter = 'a'; letter <='z'; letter++)
+	while (k <= 40)
 	{
-		putchar(letter);
+		putchar(k);
+		k++;
 	}
-	for (letter = 'A'; letter <= 'Z'; letter++)
+	while(j <= 20)
 	{
-		putchar(letter);
+		putchar(j);
+		j++;
 	}
 	putchar('\n');
 	
-	return (0);
+	return(0);
+}
 
+	
