@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - the entry point*
+ * main - Print the alphabet*
  * 
- * Returb: 0 when successful
+ * Returb: 0 when (Successful)
  */
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 	while(j <= 90)
 	{
 		putchar(j);
-		j++;
+		j++;...
 	}
 	putchar('\n');
 	
