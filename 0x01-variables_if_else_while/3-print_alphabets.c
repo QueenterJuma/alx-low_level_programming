@@ -1,20 +1,19 @@
 #include <stdio.h>
 /**
- * main - the entry point
- *
+ * main - the entry point*
  * Returb: 0 when successful
  */
 int main(void)
 {
-	int k = 27;
-	int j = 1;
+	int k = 97;
+	int j = 65;
 
-	while (k <= 40)
+	while (k <= 122)
 	{
 		putchar(k);
 		k++;
 	}
-	while(j <= 20)
+	while(j <= 90)
 	{
 		putchar(j);
 		j++;
