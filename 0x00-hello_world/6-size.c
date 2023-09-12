@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
- * main - program entry point
- * Return: 0 when successful
- */
+  * main - program entry point
+  * Return: Always 0 (Successful)
+  */
 int main(void)
 {
 	int a;
@@ -13,7 +12,6 @@ int main(void)
 	long long int e;
 
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(b));
-
 	printf("Size of a int: %lu byte(s)\n", (unsigned long)sizeof(a));
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(d));
 	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(e));
