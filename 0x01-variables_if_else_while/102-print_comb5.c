@@ -1,32 +1,35 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- * Return: Always 0 (Success)
- */
+  *main -entry point
+  *Return: Always 0 {Success)
+  */
 int main(void)
 {
-	int k1, k2;
+	int a = 0;
+	int b;
 
-	for (k1 = 0; k1 <= 99; k1++)
+	while (a <= 98)
 	{
-		for (k2 = 0; k2 <= 99; k2++)
+		b = a + 1;
+		while (b <= 99)
 		{
-			if (k1 < k2 && K1 != k2)
+			putchar(a / 10 % 10 + '0');
+			putchar(a % 10 + '0');
+			putchar(' ');
+			putchar(b / 10 % 10 + '0');
+			putchar(b % 10 + '0');
+			if (a == 98 && b == 99)
 			{
-				putchar((k1 / 10) + '0');
-				putchar((k1 % 10) + '0');
-				putchar(' ');
-				putchar((k2 / 10) + '0');
-				putchar((k2 % 10) + '0');
-				if (k1 != 98 || k2 != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar('\n');
 			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			b++;
 		}
+		a++;
 	}
-	putchar('\n');
 	return (0);
 }
