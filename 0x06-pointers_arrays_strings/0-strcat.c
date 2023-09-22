@@ -1,27 +1,31 @@
 #include "main.h"
-/** _strcat - concatenates two strings
- * @dest: input value
- * @src: input value
- * Return: void
- */
+
+/**
+  * _strcat - a function that concertinates two strings
+  *@dest: destination
+  *@src: source
+  *
+  *Return: final concertinated sting
+  */
+
 char *_strcat(char *dest, char *src)
 {
-	int a;
-	int b;
+	int cat1 = 0;
+	int cat2 = 0;
 
-	a = 0;
-	while (dest[a] != '\0')
+	/* finding the length of string dest */
+	while (dest[cat1] != '\0')
 	{
-		a++;
+		cat1++;
 	}
-	b = 0;
-	while (src[b] != '\0')
+	while (src[cat2] != '\0')
 	{
-		dest[a] = src[b];
-		a++;
-		b++;
+		dest[cat1] = src[cat2];
+		/* cat1 will start at the last value of string dest */
+		cat1++;
+		cat2++;
 	}
-	dest[a] = '\0';
+	dest[cat1] = '\0';
 	return (dest);
 }
 
