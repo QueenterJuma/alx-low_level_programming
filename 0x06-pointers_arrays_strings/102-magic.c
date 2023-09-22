@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: Demonstrates how to modify a value using a pointer.
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n;

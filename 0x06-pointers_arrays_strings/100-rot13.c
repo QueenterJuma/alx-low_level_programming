@@ -1,26 +1,15 @@
 #include "main.h"
+
 /**
- * rot13 - Encode a string using rot13
- * @s: string
- * Return: string
- */
-char *rot13(char *s)
+  *leet - function that encodes a string using rot13.
+  *@s: str
+  *Return: char  */
+
+char *leet(char *s)
 {
-	int i, j;
+	int i = 0, j = 0;
+	char string[] = "a4e3o0t7l1";
 
-	char capa[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-	char capb[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
-		for (j = 0; capa[j] != '\0'; j++)
-		{
-			if (s[i] == capa[j])
-			{
-				s[i] = capb[j];
-				break;
-			}
-		}
-	}
-	return (s);
-}
+		fo
