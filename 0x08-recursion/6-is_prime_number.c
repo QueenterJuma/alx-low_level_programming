@@ -1,32 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-  *prime_number - check for seconf function
-  *@i: integer
-  *@k: integer
-  *
-  *Return: prime
-  */
+ * funct_prime - Allows operation of _sqrt_recursion
+ * @x: type int
+ * @y: type int operator
+ * Return: sqrt int or -1 if not int
+ */
 
-int prime_number(int i, int k)
+int funct_prime(int x, int y)
 {
-	if (k == i)
-		return (1);
-	else if (k % i == 0)
+	if ((y * y) == x || x < 0)
 		return (0);
-	return (prime_number(i + 1, j));
+	else if ((y * y) > x)
+		return (1);
+	else
+		return (funct_prime(x, (y + 1)));
 }
 
 /**
-  *is_prime_number - check for prime
-  *@n: integer
-  *
-  *Return: answer
-  */
-
+ * is_prime_number - function that returns the natural sqr root number.
+ * @n: type int
+ * Return: 1 if input is integer otherwise is 0
+ */
 int is_prime_number(int n)
 {
-	if (n == 1 || n < 0)
-		return (0);
-	return (prime_number(2, n));
+	return (funct_prime(n, 0));
 }
